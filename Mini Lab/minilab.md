@@ -122,10 +122,15 @@ sudo chmod +x BigQuery4.sh
 ./BigQuery4.sh
 ```
 
+# mini lab : BigQuery : 6
 
----
+```
+curl -LO https://raw.githubusercontent.com/AnniiGCP/Google-Cloud-Arcade/master/mini%20lab%20BigQuery%206/BigQuery6.sh
 
----
+sudo chmod +x BigQuery6.sh
+
+./BigQuery4.sh
+```
 
 ## 🎉 **Lab Completed!**
 

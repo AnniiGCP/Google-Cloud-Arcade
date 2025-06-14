@@ -1,1 +1,0 @@
-Autoscaling TensorFlow Model Deployments with TF Serving and Kubernetes

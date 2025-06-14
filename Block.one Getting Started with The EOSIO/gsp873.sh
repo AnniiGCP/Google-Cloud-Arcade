@@ -15,7 +15,7 @@ gcloud compute instances create my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$Z
 
 sleep 60
 
-cat > abhi.sh <<'EOF_CP'
+cat > gsp.sh <<'EOF_CP'
 
 sudo apt update
 
@@ -74,7 +74,7 @@ cleos create account eosio bob $user_public_key
 EOF_CP
 
 gcloud compute scp abhi.sh my-vm-1:/tmp --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
-gcloud compute ssh my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet --command="bash /tmp/abhi.sh"
+gcloud compute ssh my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet --command="bash /tmp/gsp.sh"
 for line in "${pattern[@]}"
 do
     echo -e "${YELLOW}${line}${NC}"

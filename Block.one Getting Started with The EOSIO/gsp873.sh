@@ -1,20 +1,21 @@
+#!/bin/bash
+YELLOW='\033[0;33m'
+NC='\033[0m' 
+for line in "${pattern[@]}"
+do
+    echo -e "${YELLOW}${line}${NC}"
+done
 gcloud auth list
-
 export ZONE=$(gcloud compute project-info describe --format="value(commonInstanceMetadata.items[google-compute-default-zone])")
-
 export REGION=$(gcloud compute project-info describe --format="value(commonInstanceMetadata.items[google-compute-default-region])")
-
 export PROJECT_ID=$(gcloud config get-value project)
-
 gcloud config set compute/zone "$ZONE"
 gcloud config set compute/region "$REGION"
-
 gcloud compute instances create my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --machine-type=e2-standard-2 --image-family=ubuntu-2004-lts --image-project=ubuntu-os-cloud --boot-disk-size=10GB --boot-disk-device-name=my-vm-1 --boot-disk-type=pd-balanced
-
 
 sleep 60
 
-cat > techcps.sh <<'EOF_CP'
+cat > abhi.sh <<'EOF_CP'
 
 sudo apt update
 
@@ -72,7 +73,9 @@ cleos create account eosio bob $user_public_key
 
 EOF_CP
 
-
-gcloud compute scp techcps.sh my-vm-1:/tmp --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
-
-gcloud compute ssh my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet --command="bash /tmp/gsp873.sh"
+gcloud compute scp abhi.sh my-vm-1:/tmp --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
+gcloud compute ssh my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet --command="bash /tmp/abhi.sh"
+for line in "${pattern[@]}"
+do
+    echo -e "${YELLOW}${line}${NC}"
+done

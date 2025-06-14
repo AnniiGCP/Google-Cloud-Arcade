@@ -15,7 +15,7 @@ gcloud compute instances create my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$Z
 
 sleep 60
 
-cat > techcps.sh <<'EOF_CP'
+cat > gsp.sh <<'EOF_CP'
 
 sudo apt update
 
@@ -76,6 +76,6 @@ EOF_CP
 
 gcloud compute scp techcps.sh my-vm-1:/tmp --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
 
-gcloud compute ssh my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet --command="bash /tmp/techcps.sh"
+gcloud compute ssh my-vm-1 --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet --command="bash /tmp/gsp.sh"
 
 

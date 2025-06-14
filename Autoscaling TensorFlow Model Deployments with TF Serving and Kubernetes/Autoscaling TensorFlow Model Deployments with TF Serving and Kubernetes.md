@@ -14,6 +14,3 @@ sudo chmod +x gsp777.sh
 
 #### *Well done!*
 
-curl -LO raw.githubusercontent.com/AnniiGCP/Google-Cloud-Arcade/main/Autoscaling%20TensorFlow%20Model%20Deployments%20with%20TF%20Serving%20and%20Kubernetes/gsp777.sh
-sudo chmod +x gsp777.sh
-./gsp777.sh

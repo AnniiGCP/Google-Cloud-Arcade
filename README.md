@@ -97,14 +97,3 @@ export REGION="us-central1"
 
 > [!NOTE]
 > These automation scripts are designed for educational exploration, Google Cloud Skills Boost lab verification, and rapid cloud prototyping. When deploying to production enterprise environments, ensure all IAM roles adhere to the principle of least privilege, enable Cloud Audit Logging, and validate security scorecards using Cloud Security Command Center.
-
----
-
-## 5. Author & Engineering Contact
-
-**Aniket Yadav**  
-*Computer Science & Design Engineer | Bengaluru, Karnataka, India*
-
-- **GitHub:** [@AnniiGCP](https://github.com/AnniiGCP)
-- **LinkedIn:** [linkedin.com/in/aniketyadav9099](https://linkedin.com/in/aniketyadav9099/)
-- **Email:** [aniketyadav0078@gmail.com](mailto:aniketyadav0078@gmail.com)

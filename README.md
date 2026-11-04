@@ -17,6 +17,12 @@
 
 ---
 
+<div align="center">
+  <img src="./assets/readme-preview.png" alt="Google Cloud Solutions — Project Preview" width="100%" />
+</div>
+
+---
+
 ## 1. Overview
 
 This repository provides automated Bash provisioning scripts and infrastructure-as-code recipes covering the full spectrum of **Google Cloud Platform (GCP)** services. Designed for Google Cloud Arcade participants, DevOps engineers, and cloud architects, these scripts demonstrate automated resource provisioning, IAM policy configuration, network topologies, BigQuery pipelines, and containerized deployments.
